@@ -1,0 +1,72 @@
+#navbar {
+    background-color:#000;
+    color: white ;
+    
+
+}
+
+#navbar>header {
+    font-size: 30px;
+    /* border: 1px solid; */
+    /* padding: 8px; */
+    position: fixed;
+    width: 146px;
+}
+
+
+#nav-list {
+  
+    margin: 0px; 
+}
+
+li .nav-link {
+    font-size: 15px;
+}
+
+
+#navbar>ul>li {
+    padding: 10px;
+    text-align: flex-start;
+    color: white !important;
+    font-weight: bold;
+
+}
+
+#main-doc {
+    margin-left: 255px;
+    padding: 5px 40px 20px 30px;
+}
+
+@media all and (max-width: 650px) {
+    #main-doc {
+        margin-left: 0px;
+        margin-top: 380px;
+    }
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#extralLink {
+    text-decoration: none;
+    border-bottom: white 0.125em solid;
+    color:blue;
+}
+
+a:visited {
+    text-decoration: none;
+    border-bottom: #000 0.125em solid;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #000000;
+}

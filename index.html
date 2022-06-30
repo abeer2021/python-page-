@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <nav id="navbar" class="collapse navbar-collapse" id="nav">
+                    <img src="python.png" width="300" height="80" class="d-inline-block align-top" alt="">
+
+                    </a>
+                    <!-- <h1>Python Documentation</h1> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                        <li><a class="nav-link" href="#CSS_Structure">Python Structure</a></li>
+                        <li>
+                            <a class="nav-link" href="#Adding_CSS_to_an_HTML_Page">Data Types in Python</a>
+                        </li>
+                        <li><a class="nav-link" href="#Cascade">Lists</a></li>
+                        <li><a class="nav-link" href="#Reference">Reference</a></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10">
+
+
+                <!-- <main id="main-doc"> -->
+                <section class="main-section" id="Introduction">
+                    <header>
+                        <h2>Introduction</h2>
+                    </header>
+                    <article>
+                        <p>
+                            Python is an easy to learn, powerful programming language. It has
+                            efficient high-level data structures and a simple but effective
+                            approach to object-oriented programming. Python’s elegant syntax and
+                            dynamic typing, together with its interpreted nature, make it an
+                            ideal language for scripting and rapid application development in
+                            many areas on most platforms.
+                        </p>
+
+                        <p>
+                            The Python interpreter and the extensive standard library are freely
+                            available in source or binary form for all major platforms from the
+                            Python Web site, https://www.python.org/, and may be freely
+                            distributed. The same site also contains distributions of and
+                            pointers to many free third party Python modules, programs and
+                            tools, and additional documentation.
+                        </p>
+
+                        <p>
+                            The Python interpreter is easily extended with new functions and
+                            data types implemented in C or C++ (or other languages callable from
+                            C). Python is also suitable as an extension language for
+                            customizable applications.
+                        </p>
+
+                        <p>
+                            This tutorial introduces the reader informally to the basic concepts
+                            and features of the Python language and system. It helps to have a
+                            Python interpreter handy for hands-on experience, but all examples
+                            are self-contained, so the tutorial can be read off-line as well.
+                        </p>
+
+                        <p>
+                            For a description of standard objects and modules, see The Python
+                            Standard Library. The Python Language Reference gives a more formal
+                            definition of the language. To write extensions in C or C++, read
+                            Extending and Embedding the Python Interpreter and Python/C API
+                            Reference Manual. There are also several books covering Python in
+                            depth.
+                        </p>
+
+                        <p>
+                            This tutorial does not attempt to be comprehensive and cover every
+                            single feature, or even every commonly used feature. Instead, it
+                            introduces many of Python’s most noteworthy features, and will give
+                            you a good idea of the language’s flavor and style. After reading
+                            it, you will be able to read and write Python modules and programs,
+                            and you will be ready to learn more about the various Python library
+                            modules described in The Python Standard Library.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="CSS_Structure">
+                    <header>
+                        <h2>Python Structure</h2>
+                    </header>
+                    <article>
+                        <p>
+                            In the following examples, input and output are distinguished by the
+                            presence or absence of prompts (<code>>>></code> and
+                            <code>…</code>): to repeat the example, you must type everything
+                            after the prompt, when the prompt appears; lines that do not begin
+                            with a prompt are output from the interpreter. Note that a secondary
+                            prompt on a line by itself in an example means you must type a blank
+                            line; this is used to end a multi-line command.
+                        </p>
+
+                        <p>
+                            Many of the examples in this manual, even those entered at the
+                            interactive prompt, include comments. Comments in Python start with
+                            the hash character, #, and extend to the end of the physical line. A
+                            comment may appear at the start of a line or following whitespace or
+                            code, but not within a string literal. A hash character within a
+                            string literal is just a hash character. Since comments are to
+                            clarify code and are not interpreted by Python, they may be omitted
+                            when typing in examples.
+                        </p>
+                        Some examples:
+
+                        <pre><code>
+            # this is the first comment
+            spam = 1  # and this is the second comment
+                # ... and now a third!
+            text = "# This is not a comment because it's inside quotes."
+              </code></pre>
+                    </article>
+                </section>
+                <section class="main-section" id="Adding_CSS_to_an_HTML_Page">
+                    <header>
+                        <h2>Data Types in Python</h2>
+                    </header>
+                    <article>
+                        <h3>Numbers</h3>
+                        <p>
+                            Let’s try some simple Python commands. Start the interpreter and
+                            wait for the primary prompt, >>>. (It shouldn’t take long.)
+                        </p>
+                        <ul>
+                            <li>
+                                Operations
+                                <p>
+                                    The interpreter acts as a simple calculator: you can type an
+                                    expression at it and it will write the value. Expression syntax
+                                    is straightforward: the operators <code>+</code>, <code></code>-</code>,
+                                    <code>*</code>
+                                    and
+                                    <code>/</code> work just like
+                                    in most other languages (for example, Pascal or C); parentheses
+                                    (<code>()</code>) can be used for grouping. For example:
+                                </p>
+                                <pre><code>
+            >>> 2 + 2
+            4
+            >>> 50 - 5*6
+            20
+            >>> (50 - 5*6) / 4
+            5.0
+            >>> 8 / 5  # division always returns a floating point number
+            1.6
+                    </code> </pre>
+                                <p>
+                                    The integer numbers (e.g. 2, 4, 20) have type <code>int</code>, the ones with a
+                                    fractional
+                                    part (e.g. 5.0, 1.6) have type <code>float</code>. We will see more about numeric
+                                    types
+                                    later in the tutorial.
+                                </p>
+                            </li>
+                            <li>
+                                Division (<code>/</code>) always returns a float.
+                                <p>
+                                    To do floor division and get an integer result (discarding any fractional result)
+                                    you
+                                    can
+                                    use the <code>//</code> operator; to calculate the remainder you can use
+                                    <code>%</code>:
+                                </p>
+                                <pre><code>
+            >>> 17 / 3  # classic division returns a float
+            5.666666666666667
+            >>>
+            >>> 17 // 3  # floor division discards the fractional part
+            5
+            >>> 17 % 3  # the % operator returns the remainder of the division
+            2
+            >>> 5 * 3 + 2  # result * divisor + remainder
+            17
+                  </code></pre>
+                            </li>
+                            <li>
+                                The equal sign (<code>=</code>) is used to assign a value to a variable.
+                                <p>
+                                    Afterwards, no result is displayed before the next interactive prompt:
+                                </p>
+                                <pre><code>
+            >>> width = 20
+            >>> height = 5 * 9
+            >>> width * height
+            900
+                  </code></pre>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="Cascade">
+                    <header>
+                        <h2>Lists</h2>
+                    </header>
+                    <article>
+                        <p>
+                            Python knows a number of compound data types, used to group together other values. The most
+                            versatile is the list, which can be written as a list of comma-separated values (items)
+                            between
+                            square brackets. Lists might contain items of different types, but usually the items all
+                            have
+                            the
+                            same type.
+                        </p>
+
+                        <p>It does so taking in consideration:</p>
+                        <ul>
+                            <li>spcificity</li>
+                            <li>importance</li>
+                            <li>inheritance</li>
+                            <li>order in the file</li>
+                        </ul>
+                        <pre><code>
+            >>> squares = [1, 4, 9, 16, 25]
+            >>> squares
+            [1, 4, 9, 16, 25]
+              </code></pre>
+                        <p>Like strings (and all other built-in sequence types), lists can be indexed and sliced:</p>
+                        <pre><code>
+            >>> squares[0]  # indexing returns the item
+            1
+            >>> squares[-1]
+            25
+            >>> squares[-3:]  # slicing returns a new list
+            [9, 16, 25]
+                </code></pre>
+                        <p>All slice operations return a new list containing the requested elements. This means that the
+                            following slice returns a shallow copy of the list:</p>
+                        <pre><code>
+            >>> squares[:]
+            [1, 4, 9, 16, 25]
+              </code></pre>
+                    </article>
+                </section>
+                <section class="main-section" id="Reference">
+                    <header>
+                        <h2>Reference</h2>
+                    </header>
+                    <ul>
+                        <li>
+                            All the documentation from this page is taken from the
+                            <a id="extralLink" href="https://docs.python.org/3/tutorial/introduction.html#numbers">
+                                official
+                                Python documentation page</a>.
+                        </li>
+                    </ul>
+                </section>
+                </main>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
